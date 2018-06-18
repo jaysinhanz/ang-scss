@@ -1,3 +1,6 @@
+# branch "scssIntro" 
+ Experiment with tutorial 
+ https://scotch.io/tutorials/how-to-use-sass-mixins#what-is-a-mixin
 # This Project ang-scss
 This project is a tutorial for incorporating scss, bootstrap and font-awesome.
 Main objective is to get started with Angular6 + scss 

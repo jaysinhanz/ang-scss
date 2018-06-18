@@ -1,0 +1,92 @@
+<div class="flexcontainer">
+  <div class="flex-continer-header-left">
+
+    <a class="brand-link" data-baseurl="/ecf.ui/site/422/order/summary/" href="/ecf.ui/site/422/order/summary/">
+      <img class="icon-brand" src="../../assets/images/icon.brandPEL.png" alt="">
+    </a>
+    <div class="field-item">
+      <input type="text" class="store-autocomplete ui-autocomplete-input" spellcheck="false" id="sites-dropdown" onfocus="this.select();"
+        onmouseup="return false;" value="Bayfair Girven Rd 422" data-url="/ecf.ui/site/" data-do-not-change-track="true" autocomplete="off">
+    </div>
+
+
+    <a class="link-search" title="Search orders" href="/ecf.ui/site/422/search/orders/">
+      <i class="fa fa-search search-header" aria-hidden="true"></i>
+    </a>
+
+  </div>
+
+  <div class="header-center" id="ordersummaryscreen">
+    <h1>Order Summary </h1>
+    <h6 class="ordersummary-h6">last refreshed
+      <span>a few seconds ago</span>
+    </h6>
+  </div>
+
+  <div class="header-right">
+
+    <ul class="unlist horizontal-list system-links">
+      <li class="link-refresh">
+        <a href="#">
+          <i class="fa fa-fw fa-refresh" aria-hidden="true"></i> Refresh (
+          <span id="refreshFrequency">Never</span>)</a>
+        <ul class="settings-menu">
+          <li>
+            <a class="refreshPage" href="#" data-refresh-frequency-default="-1" data-refresh-frequency="-1">Never</a>
+          </li>
+
+          <li>
+            <a class="refreshPage" href="#" data-refresh-frequency="0">Refresh Now</a>
+          </li>
+          <li>
+            <a class="refreshPage" href="#" data-refresh-frequency="300">Every 5 Minutes</a>
+          </li>
+          <li>
+            <a class="refreshPage" href="#" data-refresh-frequency="600">Every 10 Minutes</a>
+          </li>
+          <li>
+            <a class="refreshPage" href="#" data-refresh-frequency="1800">Every 30 Minutes</a>
+          </li>
+        </ul>
+      </li>
+      <li class="link-refresh">
+        <a href="/ecf.ui/site/422/report/viewreports/">
+          <i class="fa fa-bar-chart" aria-hidden="true"></i>
+          Reports
+        </a>
+      </li>
+      <li>
+        <a class="link-progress" href="#" data-feature-under-development="">
+          <i class="fa fa-male" aria-hidden="true"></i> Progress</a>
+      </li>
+      <li class="link-settings">
+        <a href="#">
+          <i class="fa fa-cogs" aria-hidden="true"></i> Settings</a>
+        <ul class="settings-menu">
+          <li>
+            <a class="print" href="/ecf.ui/site/422/setting/users/">Users</a>
+          </li>
+
+          <li>
+            <a class="print" href="/ecf.ui/site/422/setting/goalparameters/">Picking Goal Time</a>
+          </li>
+          <li>
+            <a class="print" href="/ecf.ui/site/422/setting/outofstockandcopsettings/">OOS &amp; COP Settings</a>
+          </li>
+          <li>
+            <a class="print" href="/ecf.ui/site/422/setting/getrfgunsettings/">RF Gun Settings</a>
+          </li>
+          <li>
+            <a class="print" href="/ecf.ui/site/422/print/manageprinters/">Manage Printers</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div id="refreshWarning" class="refreshWarning" style="position: fixed; display: none; z-index: 100003 !important;">
+      <div>Refreshing...</div>
+      <span id="refreshCountdown" style="font-size: 20px;">&nbsp;</span>
+      <input id="refresh-cancel" type="submit" style="background: #FFBF00" value="Cancel">
+    </div>
+  </div>
+</div>
