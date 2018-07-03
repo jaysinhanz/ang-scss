@@ -6,14 +6,16 @@ import { AppComponent } from './app.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { SiteSelectorComponent } from './shared/site-selector.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HomeComponent } from './home/home.component'
+import { HomeComponent } from './home/home.component';
+import { TopHeaderComponent } from './top-header/top-header.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     DropdownDirective,
     SiteSelectorComponent,
-    HomeComponent
+    HomeComponent,
+    TopHeaderComponent
   ],
   imports: [
     BrowserModule,

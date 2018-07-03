@@ -1,0 +1,174 @@
+/* Demo by Christian Krammer, @Chris_Krammer, www.css3files.com */
+
+/* Official specifications: http://www.w3.org/TR/css3-flexbox/ */
+
+/* New syntax of Flexible box layout module (flexbox) */
+
+.container {
+  display: flex;
+  height: 45px;
+  background: green;
+  justify-content: space-around;  
+  .flex-continer-header-left {
+    display: flex;    
+    align-items: center;    
+    .brand-link {
+      margin-right: 2em;
+    }
+  }
+
+
+}
+
+.link-search {
+  margin-left: 2em;
+  color: #d4cbc0;
+  text-shadow: 0 -1px #000;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  .search-header {
+    font-size: 2em;
+  }
+}
+
+.header-center {
+  display: flex; 
+  flex-direction: column;
+  color: white;
+
+  
+  .order-summary-h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;   
+    font-weight: 700;
+    color: #f9f9f3;    
+    text-shadow: 0 -1px #000;
+    
+  }
+  .order-summary-h6 {
+    display: flex; 
+    align-items: flex-end;  
+    font-size: 11px;   
+    height:25px;
+  }
+}
+
+
+.header-right{
+    display: flex;
+    align-self: center;
+    color: white;
+    padding-bottom: .5rem;   
+}
+
+.unlist, .unlist ul, .unlist ol,
+iframe {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+}
+
+.horizontal-list > li {
+	float: left;
+}
+
+/* ----------
+	1.2.1 Header Right
+---------- */
+.system-links {
+	float: right;
+	font-size: 13px;
+	line-height: 66px;
+}
+
+.system-links a {
+	display: block;
+	padding: 0 15px 0 15px;
+	color: #d4cbc0;
+	text-shadow: 0 -1px #000;
+	background-position: 0 26px;
+	background-repeat: no-repeat;
+}
+
+.link-settings:hover > ul.settings-menu {
+	display: block;
+}
+
+.link-refresh:hover > ul.settings-menu {
+	display: block;
+}
+
+.system-links li {
+	position: relative;
+	display: inline-block;
+}
+
+.system-links ul.settings-menu {
+	display: none;
+	position: absolute;
+	top: 52px;
+	right: 0;
+	z-index: 30;
+	width: 250px;
+	padding-top: 7px;
+     background: url(../../../src/assets/images/background.list.arrow.green.png) no-repeat 79% top; 
+     li {
+        background: #79c157;
+        display: block;
+        border-left: 1px solid #9b9b9b;
+        border-right: 1px solid #9b9b9b;
+        line-height: 40px;
+    }
+    
+}
+
+
+
+.system-links ul.settings-menu li:first-child {
+	-webkit-border-radius: 5px 5px 0 0;
+	-khtml-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-ms-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+
+.system-links ul.settings-menu li:last-child {
+	-webkit-border-radius: 0 0 5px 5px;
+	-khtml-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	-ms-border-radius: 0 0 5px 5px;
+	-o-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+}
+
+.system-links ul.settings-menu li:hover {
+	background: #3b3b3b;
+}
+
+.system-links ul.settings-menu a {
+	display: block;
+	padding: 0;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 40px;
+	text-align: left;
+	padding-left: 23px;
+	text-shadow: 0 -1px rgba( 0, 0, 0, 0.3 );
+}
+
+/* This isn't supported by IE8, so replicated in IE.css */
+.system-links > li:last-child a {
+	padding-right: 0;
+	margin-right: 45px;
+}
+
+.system-links a:hover, .system-links a.current {
+	color: #fff;
+	text-decoration: none;
+}

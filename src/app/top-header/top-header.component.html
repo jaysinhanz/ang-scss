@@ -1,11 +1,11 @@
-<div class="flexcontainer">
+<div class="container">
   <div class="flex-continer-header-left">
 
     <a class="brand-link" data-baseurl="/ecf.ui/site/422/order/summary/" href="/ecf.ui/site/422/order/summary/">
       <img class="icon-brand" src="../../assets/images/icon.brandPEL.png" alt="">
     </a>
     <div class="field-item">
-        <app-site-selector></app-site-selector>
+      <app-site-selector></app-site-selector>
       <!-- <input type="text" class="store-autocomplete ui-autocomplete-input" spellcheck="false" id="sites-dropdown" onfocus="this.select();"
         onmouseup="return false;" value="Bayfair Girven Rd 422" data-url="/ecf.ui/site/" data-do-not-change-track="true" autocomplete="off"> -->
     </div>
@@ -17,11 +17,15 @@
 
   </div>
 
+
   <div class="header-center" id="ordersummaryscreen">
-    <h1>Order Summary </h1>
-    <h6 class="ordersummary-h6">last refreshed
+    <div class="order-summary-h1">
+      Order Summary
+    </div>
+    <div class="order-summary-h6">
+      last refreshed
       <span>a few seconds ago</span>
-    </h6>
+    </div>
   </div>
 
   <div class="header-right">
@@ -90,4 +94,5 @@
       <input id="refresh-cancel" type="submit" style="background: #FFBF00" value="Cancel">
     </div>
   </div>
+
 </div>
