@@ -1,3 +1,7 @@
+# next step
+ 1. add a service that returns store data
+ 2. add custom dropdown to store selector
+ 3. add service to return order summary
 # branch "scssIntro" 
  Experiment with tutorial 
  https://scotch.io/tutorials/how-to-use-sass-mixins#what-is-a-mixin
