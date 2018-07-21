@@ -9,6 +9,8 @@
 This project is a tutorial for incorporating scss, bootstrap and font-awesome.
 Main objective is to get started with Angular6 + scss 
 # ScssReferences
+Use a custom directive to close the site drop down.
+https://chyngyz.github.io/click-outside-directive/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
